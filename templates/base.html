@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ data.name }} – Portfolio</title>
+    <meta name="description" content="{{ data.tagline }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/particles.js') }}"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">{{ data.name }}</a>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#hero" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#leadership" class="nav__link">Leadership</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="nav__icon"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main container where page sections will be injected -->
+    <main id="content">
+        <!-- Sections are populated by JS after fetching /api/data -->
+    </main>
+
+    <footer class="footer">
+        <p>&copy; {{ data.name }} {{ current_year }}</p>
+    </footer>
+</body>
+</html>

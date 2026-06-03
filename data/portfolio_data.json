@@ -1,0 +1,57 @@
+{
+  "name": "Abhiuday Pratap Singh",
+  "tagline": "Full‑Stack Engineer • AI Enthusiast • Product Thinker",
+  "bio": "Passionate developer who builds intelligent, data‑driven products. Experienced across AI/ML, backend, frontend, and product management.",
+  "profile_photo": "static/images/avatar_placeholder_1780505086137.png",
+  "social": {
+    "github": "https://github.com/abhiuday17",
+    "linkedin": "https://linkedin.com/in/abhiuday-pratap-singh",
+    "leetcode": "https://leetcode.com/abhiuday17",
+    "gfg": "https://geeksforgeeks.org/user/abhiuday17"
+  },
+  "skills": ["Python", "Flask", "JavaScript", "HTML5", "CSS3", "React", "Node.js", "SQL", "Docker", "Git"],
+  "experience": [
+    {
+      "company": "TechNova Solutions",
+      "role": "Full‑Stack Engineer",
+      "duration": "Jan 2022 – Present",
+      "details": [
+        "Led the design & implementation of a micro‑service architecture serving 200k+ monthly users.",
+        "Integrated ML models with REST APIs, reducing inference latency by 40%.",
+        "Mentored a team of 4 junior developers."
+      ]
+    },
+    {
+      "company": "DataPulse Labs",
+      "role": "AI Engineer",
+      "duration": "Jun 2020 – Dec 2021",
+      "details": [
+        "Developed end‑to‑end pipelines for computer‑vision projects using PyTorch.",
+        "Published 2 internal white‑papers on model interpretability."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Travel Advisor Agent",
+      "description": "AI‑powered travel recommendation platform with dynamic itinerary generation.",
+      "github": "https://github.com/abhiuday17/Travel_Advisor_Agent",
+      "demo": "#"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Responsive, cinematic‑style personal portfolio using Flask, HTML, CSS, and JS.",
+      "github": "https://github.com/abhiuday17/Official_Portfolio",
+      "demo": "#"
+    }
+  ],
+  "leadership": {
+    "title": "Finance Committee Head",
+    "summary": "Managed a fund of 5L INR, grew community to 100+ members, organized quarterly hackathons.",
+    "metrics": {
+      "budget": "5L",
+      "members": 100,
+      "events": 4
+    }
+  }
+}

@@ -1,0 +1,4 @@
+.htaccess
+RewriteEngine On
+# Redirect all requests to the Flask app via Passenger
+RewriteRule ^(.*)$ passenger_wsgi.py [QSA,L]

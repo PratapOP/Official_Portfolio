@@ -1,0 +1,106 @@
+/* style.css - Dark professional theme with lazy loading and smooth transitions */
+:root {
+    --bg-color: #0a0a0a;
+    --primary-color: #e63946; /* vivid red */
+    --accent-color: #ff6b6b;
+    --text-color: #f1f1f1;
+    --card-bg: rgba(255,255,255,0.04);
+    --font-sans: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--font-sans);
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a { color: var(--primary-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 30% 30%, #1a1a1a, var(--bg-color));
+    position: relative;
+    overflow: hidden;
+}
+
+/* Particle animation via simple pseudo‑elements */
+header.hero::before, header.hero::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, var(--primary-color) 1px, transparent 1px);
+    background-size: 30px 30px;
+    animation: particles 30s linear infinite;
+    opacity: 0.07;
+}
+
+@keyframes particles {
+    from {transform: rotate(0deg) translate(0,0);}
+    to {transform: rotate(360deg) translate(0,0);}
+}
+
+h1.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p.tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section:nth-child(even) {background: #111;}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.4);}
+
+img.lazy {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+img.lazy.loaded {opacity: 1;}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+}
