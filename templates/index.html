@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ data.name }} — Portfolio</title>
+    <meta name="description" content="{{ data.tagline }}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+    <!-- ═══════════════ CUSTOM CURSOR ═══════════════ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- ═══════════════ PRELOADER ═══════════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__line"></div>
+            <span class="preloader__text">LOADING</span>
+        </div>
+    </div>
+
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <a href="#hero" class="nav__logo">
+                <span class="nav__logo-accent">A</span>PS
+            </a>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#hero" class="nav__link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+                <li><a href="#experience" class="nav__link" data-section="experience">Experience</a></li>
+                <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+                <li><a href="#leadership" class="nav__link" data-section="leadership">Leadership</a></li>
+                <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero" class="hero">
+        <canvas id="particle-canvas" class="hero__canvas"></canvas>
+        <div class="hero__overlay"></div>
+        <div class="hero__content reveal">
+            <p class="hero__greeting">Hello, I'm</p>
+            <h1 class="hero__name">{{ data.name }}</h1>
+            <div class="hero__role-wrapper">
+                <span class="hero__role-prefix">I am a&nbsp;</span>
+                <span class="hero__role" id="typewriter"></span>
+                <span class="hero__cursor">|</span>
+            </div>
+            <p class="hero__tagline">{{ data.bio | truncate(120) }}</p>
+            <div class="hero__cta">
+                <a href="#projects" class="btn btn--primary">View My Work</a>
+                <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            </div>
+            <div class="hero__socials">
+                <a href="{{ data.social.github }}" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="{{ data.social.linkedin }}" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="{{ data.social.leetcode }}" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                <a href="{{ data.social.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <a href="#about" class="hero__scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number">01.</span> About Me</h2>
+            <div class="about__grid">
+                <div class="about__text reveal">
+                    <p>{{ data.bio }}</p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number" data-target="3">0</span><span class="stat__plus">+</span>
+                            <span class="stat__label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-target="3">0</span><span class="stat__plus">+</span>
+                            <span class="stat__label">Internships</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-target="91">0</span><span class="stat__plus">%</span>
+                            <span class="stat__label">ML Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__education reveal">
+                    <h3 class="about__subtitle">Education</h3>
+                    {% for edu in data.education %}
+                    <div class="edu-card">
+                        <div class="edu-card__icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-card__content">
+                            <h4>{{ edu.institution }}</h4>
+                            <p>{{ edu.degree }}</p>
+                            <span class="edu-card__date">{{ edu.duration }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section id="skills" class="section section--alt">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number">02.</span> Technical Skills</h2>
+            <div class="skills__grid">
+                {% for category, items in data.skills.items() %}
+                <div class="skill-category reveal">
+                    <h3 class="skill-category__title">{{ category }}</h3>
+                    <div class="skill-category__tags">
+                        {% for skill in items %}
+                        <span class="skill-tag">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number">03.</span> Experience</h2>
+            <div class="timeline">
+                {% for exp in data.experience %}
+                <div class="timeline__item reveal">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">{{ exp.role }}</h3>
+                                <p class="timeline__company">{{ exp.company }}</p>
+                            </div>
+                            <span class="timeline__duration">{{ exp.duration }}</span>
+                        </div>
+                        <ul class="timeline__details">
+                            {% for detail in exp.details %}
+                            <li>{{ detail }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects" class="section section--alt">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number">04.</span> Projects</h2>
+            <div class="projects__grid">
+                {% for proj in data.projects %}
+                <div class="project-card reveal">
+                    <div class="project-card__header">
+                        <i class="fas fa-folder-open project-card__icon"></i>
+                        <div class="project-card__links">
+                            {% if proj.github %}
+                            <a href="{{ proj.github }}" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            {% endif %}
+                            {% if proj.live %}
+                            <a href="{{ proj.live }}" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">{{ proj.title }}</h3>
+                    <p class="project-card__subtitle">{{ proj.subtitle }}</p>
+                    <p class="project-card__desc">{{ proj.description }}</p>
+                    <div class="project-card__tech">
+                        {% for tech in proj.tech %}
+                        <span>{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ LEADERSHIP ═══════════════ -->
+    <section id="leadership" class="section">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number">05.</span> Leadership</h2>
+            <div class="leadership__card reveal">
+                <div class="leadership__header">
+                    <div>
+                        <h3>{{ data.leadership.role }}</h3>
+                        <p class="leadership__org">{{ data.leadership.organization }}</p>
+                    </div>
+                    <span class="leadership__duration">{{ data.leadership.duration }}</span>
+                </div>
+                <ul class="leadership__highlights">
+                    {% for h in data.leadership.highlights %}
+                    <li>{{ h }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="leadership__metrics">
+                    <div class="metric">
+                        <span class="metric__value">{{ data.leadership.metrics.funding }}</span>
+                        <span class="metric__label">Funding Secured</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric__value">{{ data.leadership.metrics.members }}</span>
+                        <span class="metric__label">Team Members</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric__value">{{ data.leadership.metrics.events }}</span>
+                        <span class="metric__label">Events Managed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section section--alt">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number">06.</span> Get In Touch</h2>
+            <div class="contact__grid">
+                <div class="contact__info reveal">
+                    <p class="contact__text">I'm currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hello — feel free to reach out!</p>
+                    <div class="contact__links">
+                        <a href="{{ data.social.email }}" class="contact__link">
+                            <i class="fas fa-envelope"></i>
+                            <span>{{ data.email }}</span>
+                        </a>
+                        <a href="{{ data.social.github }}" target="_blank" class="contact__link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="{{ data.social.linkedin }}" target="_blank" class="contact__link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form reveal" id="contact-form">
+                    <div class="form__group">
+                        <input type="text" name="name" id="form-name" placeholder=" " required />
+                        <label for="form-name">Your Name</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" id="form-email" placeholder=" " required />
+                        <label for="form-email">Your Email</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea name="message" id="form-message" rows="5" placeholder=" " required></textarea>
+                        <label for="form-message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p class="form__status" id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; {{ current_year }} {{ data.name }}. Crafted with passion.</p>
+                <div class="footer__socials">
+                    <a href="{{ data.social.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="{{ data.social.linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="{{ data.social.leetcode }}" target="_blank"><i class="fas fa-code"></i></a>
+                    <a href="{{ data.social.gfg }}" target="_blank"><i class="fas fa-laptop-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

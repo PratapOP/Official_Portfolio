@@ -1,57 +1,114 @@
 {
   "name": "Abhiuday Pratap Singh",
-  "tagline": "Full‑Stack Engineer • AI Enthusiast • Product Thinker",
-  "bio": "Passionate developer who builds intelligent, data‑driven products. Experienced across AI/ML, backend, frontend, and product management.",
-  "profile_photo": "static/images/avatar_placeholder_1780505086137.png",
+  "tagline": "Full-Stack Developer | Data Analyst | AI Enthusiast",
+  "roles": ["Full-Stack Developer", "Data Analyst", "AI/ML Engineer", "Product Thinker"],
+  "email": "abhiuday17@gmail.com",
+  "bio": "B.Tech in Information Technology from Jaypee University of Information Technology, Himachal Pradesh (2023-2027). Currently pursuing a Post Graduate Program in Product Management using Agentic AI from IIT Madras (2026-2027). I build intelligent, data-driven products across the full stack — from scalable backends and dynamic frontends to explainable AI systems.",
+  "profile_photo": "https://api.dicebear.com/7.x/initials/svg?seed=APS&backgroundColor=c0392b&textColor=ffffff&fontSize=42",
   "social": {
     "github": "https://github.com/abhiuday17",
     "linkedin": "https://linkedin.com/in/abhiuday-pratap-singh",
     "leetcode": "https://leetcode.com/abhiuday17",
-    "gfg": "https://geeksforgeeks.org/user/abhiuday17"
+    "gfg": "https://geeksforgeeks.org/user/abhiuday17",
+    "email": "mailto:abhiuday17@gmail.com"
   },
-  "skills": ["Python", "Flask", "JavaScript", "HTML5", "CSS3", "React", "Node.js", "SQL", "Docker", "Git"],
+  "education": [
+    {
+      "institution": "Jaypee University of Information Technology",
+      "degree": "Bachelor of Technology in Information Technology",
+      "duration": "2023 - 2027"
+    },
+    {
+      "institution": "IIT Madras (Pursuing)",
+      "degree": "Post Graduate Program — Product Management using Agentic AI",
+      "duration": "2026 - 2027"
+    }
+  ],
+  "skills": {
+    "Languages": ["C", "C++", "Python", "Java", "TypeScript", "SQL"],
+    "Frontend": ["React.js", "Next.js", "HTML5", "CSS3"],
+    "Backend": ["Node.js", "REST APIs", "Flask"],
+    "Databases": ["PostgreSQL", "MySQL"],
+    "Data & ML": ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "OpenCV", "SHAP"],
+    "DevOps & Tools": ["Git", "GitHub", "Docker", "Postman", "VS Code"],
+    "Platforms": ["Vercel", "Render", "Railways"],
+    "AI/LLM": ["OpenAI GPT", "Google Gemini", "Anthropic Claude", "DeepSeek AI", "Ollama", "LLaMA3"],
+    "Business Tools": ["Excel", "Power BI", "Canva", "PowerPoint", "LaTeX"]
+  },
   "experience": [
     {
-      "company": "TechNova Solutions",
-      "role": "Full‑Stack Engineer",
-      "duration": "Jan 2022 – Present",
+      "company": "RangManch Event Management Pvt. Ltd.",
+      "role": "Full Stack Developer Intern",
+      "duration": "Apr 2025 - Oct 2025",
       "details": [
-        "Led the design & implementation of a micro‑service architecture serving 200k+ monthly users.",
-        "Integrated ML models with REST APIs, reducing inference latency by 40%.",
-        "Mentored a team of 4 junior developers."
+        "Developed and deployed full-stack web applications using React.js, Next.js, TypeScript, and PostgreSQL.",
+        "Designed modular UI components and optimized backend queries, reducing page load latency and improving application responsiveness.",
+        "Integrated REST APIs and designed PostgreSQL database schemas for dynamic event and sponsor data.",
+        "Collaborated using Git-based version control and agile development workflows."
       ]
     },
     {
-      "company": "DataPulse Labs",
-      "role": "AI Engineer",
-      "duration": "Jun 2020 – Dec 2021",
+      "company": "RangManch Event Management Pvt. Ltd.",
+      "role": "Management Trainee",
+      "duration": "Apr 2025 - Oct 2025",
       "details": [
-        "Developed end‑to‑end pipelines for computer‑vision projects using PyTorch.",
-        "Published 2 internal white‑papers on model interpretability."
+        "Assisted financial planning support for events and client deliverables.",
+        "Coordinated vendors for cost-efficient procurement decisions.",
+        "Contributed to sponsorship outreach and revenue initiatives.",
+        "Supported operational budgeting and project coordination."
+      ]
+    },
+    {
+      "company": "Meditech Innovations",
+      "role": "Data Analyst Intern",
+      "duration": "Nov 2025 - Jan 2026",
+      "details": [
+        "Performed data cleaning, transformation, and exploratory analysis on healthcare datasets using Python and Pandas.",
+        "Built analytical reports and dashboards to identify operational inefficiencies.",
+        "Applied statistical analysis to derive insights supporting data-driven decision making."
       ]
     }
   ],
   "projects": [
     {
-      "title": "Travel Advisor Agent",
-      "description": "AI‑powered travel recommendation platform with dynamic itinerary generation.",
-      "github": "https://github.com/abhiuday17/Travel_Advisor_Agent",
-      "demo": "#"
+      "title": "StressIntel PRO",
+      "subtitle": "Explainable AI Stress Diagnostics Platform",
+      "description": "AI-driven stress diagnostics platform using XGBoost, Random Forest, and behavioral analytics on 24+ stress indicators. Integrated SHAP Explainable AI and OpenCV-based facial analysis for real-time stress prediction. Built Flask APIs and interactive Chart.js dashboards. Achieved 91.2% prediction accuracy.",
+      "tech": ["Python", "Flask", "XGBoost", "OpenCV", "SHAP", "LLaMA3", "Chart.js"],
+      "github": "https://github.com/abhiuday17/StressIntel-PRO",
+      "live": null
     },
     {
-      "title": "Portfolio Website",
-      "description": "Responsive, cinematic‑style personal portfolio using Flask, HTML, CSS, and JS.",
-      "github": "https://github.com/abhiuday17/Official_Portfolio",
-      "demo": "#"
+      "title": "Event Management Web Platform",
+      "subtitle": "RangManch Event Management Pvt. Ltd.",
+      "description": "Production-ready event management platform using React.js, Next.js, and PostgreSQL. Implemented dynamic event listings, sponsor modules, and responsive UI components with real-time data updates.",
+      "tech": ["React.js", "Next.js", "PostgreSQL", "REST APIs"],
+      "github": null,
+      "live": "#"
+    },
+    {
+      "title": "ResumeAnalyzer-XAI",
+      "subtitle": "Explainable ATS Resume Screening Platform",
+      "description": "AI-powered resume analysis platform evaluating PDFs against 20+ job roles. Built ATS compatibility scoring pipelines using ML models trained on 2,500+ resumes. Integrated SHAP for feature-level contributions and explainable hiring recommendations.",
+      "tech": ["Python", "Scikit-learn", "SHAP", "Kaggle", "Streamlit"],
+      "github": "https://github.com/abhiuday17/ResumeAnalyzer-XAI",
+      "live": null
     }
   ],
   "leadership": {
-    "title": "Finance Committee Head",
-    "summary": "Managed a fund of 5L INR, grew community to 100+ members, organized quarterly hackathons.",
+    "role": "Head Coordinator",
+    "organization": "Finance Committee — JUIT Youth Club",
+    "duration": "Aug 2025 - Present",
+    "highlights": [
+      "Secured INR 5+ lakhs in sponsorship funding through strategic outreach and partnership negotiations.",
+      "Led financial planning and sponsorship strategy for PARAKRAM 2025 and Le Fiestus 2026.",
+      "Managed budgeting workflows and sponsor deliverables across 15+ events.",
+      "Coordinated cross-functional teams of 100+ members, ensuring successful execution."
+    ],
     "metrics": {
-      "budget": "5L",
-      "members": 100,
-      "events": 4
+      "funding": "₹5L+",
+      "members": "100+",
+      "events": "15+"
     }
   }
 }
