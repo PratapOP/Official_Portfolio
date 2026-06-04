@@ -1,9 +1,16 @@
 {
   "name": "Abhiuday Pratap Singh",
   "tagline": "Full-Stack Developer | Data Analyst | AI Enthusiast",
-  "roles": ["Full-Stack Developer", "Data Analyst", "AI/ML Engineer", "Product Thinker"],
+  "roles": [
+    "Full-Stack Developer",
+    "Data Analyst",
+    "AI/ML Engineer",
+    "Product Thinker",
+    "Finance Management",
+    "Sponsorship and Partnership"
+  ],
   "email": "abhiuday17@gmail.com",
-  "bio": "B.Tech in Information Technology from Jaypee University of Information Technology, Himachal Pradesh (2023-2027). Currently pursuing a Post Graduate Program in Product Management using Agentic AI from IIT Madras (2026-2027). I build intelligent, data-driven products across the full stack — from scalable backends and dynamic frontends to explainable AI systems.",
+  "bio": "B.Tech in Information Technology from Jaypee University of Information Technology, Himachal Pradesh (2023-2027).",
   "profile_photo": "https://api.dicebear.com/7.x/initials/svg?seed=APS&backgroundColor=c0392b&textColor=ffffff&fontSize=42",
   "social": {
     "github": "https://github.com/abhiuday17",
@@ -25,15 +32,66 @@
     }
   ],
   "skills": {
-    "Languages": ["C", "C++", "Python", "Java", "TypeScript", "SQL"],
-    "Frontend": ["React.js", "Next.js", "HTML5", "CSS3"],
-    "Backend": ["Node.js", "REST APIs", "Flask"],
-    "Databases": ["PostgreSQL", "MySQL"],
-    "Data & ML": ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "OpenCV", "SHAP"],
-    "DevOps & Tools": ["Git", "GitHub", "Docker", "Postman", "VS Code"],
-    "Platforms": ["Vercel", "Render", "Railways"],
-    "AI/LLM": ["OpenAI GPT", "Google Gemini", "Anthropic Claude", "DeepSeek AI", "Ollama", "LLaMA3"],
-    "Business Tools": ["Excel", "Power BI", "Canva", "PowerPoint", "LaTeX"]
+    "Languages": [
+      "C",
+      "C++",
+      "Python",
+      "Java",
+      "TypeScript",
+      "SQL"
+    ],
+    "Frontend": [
+      "React.js",
+      "Next.js",
+      "HTML5",
+      "CSS3"
+    ],
+    "Backend": [
+      "Node.js",
+      "REST APIs",
+      "Flask"
+    ],
+    "Databases": [
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "Data & ML": [
+      "Pandas",
+      "NumPy",
+      "MatplotLib",
+      "Seaborn",
+      "Scikit-learn",
+      "TensorFlow",
+      "OpenCV",
+      "SHAP"
+    ],
+    "DevOps & Tools": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Postman",
+      "VS Code"
+    ],
+    "Platforms": [
+      "Vercel",
+      "Render",
+      "Railways"
+    ],
+    "AI/LLM": [
+      "OpenAI GPT",
+      "Google Gemini",
+      "Anthropic Claude",
+      "DeepSeek AI",
+      "Ollama",
+      "LLaMA3"
+    ],
+    "Business Tools": [
+      "Excel",
+      "Power BI",
+      "Canva",
+      "PowerPoint",
+      "LaTeX"
+    ]
   },
   "experience": [
     {
@@ -74,7 +132,15 @@
       "title": "StressIntel PRO",
       "subtitle": "Explainable AI Stress Diagnostics Platform",
       "description": "AI-driven stress diagnostics platform using XGBoost, Random Forest, and behavioral analytics on 24+ stress indicators. Integrated SHAP Explainable AI and OpenCV-based facial analysis for real-time stress prediction. Built Flask APIs and interactive Chart.js dashboards. Achieved 91.2% prediction accuracy.",
-      "tech": ["Python", "Flask", "XGBoost", "OpenCV", "SHAP", "LLaMA3", "Chart.js"],
+      "tech": [
+        "Python",
+        "Flask",
+        "XGBoost",
+        "OpenCV",
+        "SHAP",
+        "LLaMA3",
+        "Chart.js"
+      ],
       "github": "https://github.com/abhiuday17/StressIntel-PRO",
       "live": null
     },
@@ -82,7 +148,12 @@
       "title": "Event Management Web Platform",
       "subtitle": "RangManch Event Management Pvt. Ltd.",
       "description": "Production-ready event management platform using React.js, Next.js, and PostgreSQL. Implemented dynamic event listings, sponsor modules, and responsive UI components with real-time data updates.",
-      "tech": ["React.js", "Next.js", "PostgreSQL", "REST APIs"],
+      "tech": [
+        "React.js",
+        "Next.js",
+        "PostgreSQL",
+        "REST APIs"
+      ],
       "github": null,
       "live": "#"
     },
@@ -90,9 +161,27 @@
       "title": "ResumeAnalyzer-XAI",
       "subtitle": "Explainable ATS Resume Screening Platform",
       "description": "AI-powered resume analysis platform evaluating PDFs against 20+ job roles. Built ATS compatibility scoring pipelines using ML models trained on 2,500+ resumes. Integrated SHAP for feature-level contributions and explainable hiring recommendations.",
-      "tech": ["Python", "Scikit-learn", "SHAP", "Kaggle", "Streamlit"],
+      "tech": [
+        "Python",
+        "Scikit-learn",
+        "SHAP",
+        "Kaggle",
+        "Streamlit"
+      ],
       "github": "https://github.com/abhiuday17/ResumeAnalyzer-XAI",
       "live": null
+    },
+    {
+      "title": "Employee Management System",
+      "subtitle": "A comprehensive desktop application for managing employee data",
+      "description": "A comprehensive desktop application for managing employee data, built with Python and Tkinter.",
+      "tech": [
+        "Python",
+        "Tkinter",
+        "SQL3"
+      ],
+      "github": "https://github.com/PratapOP/Employee-Management-System",
+      "live": "#"
     }
   ],
   "leadership": {
