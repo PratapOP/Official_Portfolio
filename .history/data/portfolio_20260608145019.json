@@ -1,0 +1,195 @@
+    {
+    "personal": {
+        "name": "Abhiuday Pratap Singh",
+        "short_name": "APS",
+        "headline": "AI Engineer • Product Strategist • Finance Leader",
+        "tagline": "Building AI Products, Leading Teams, and Solving Real Business Problems.",
+        "email": "abhiuday17@gmail.com",
+        "phone": "+91 8826080757",
+        "location": "India",
+        "website": "https://abhiudaypsingh.com",
+        "profile_image": "assets/images/profile/profile-main.jpg"
+    },
+
+    "socials": {
+        "github": "https://github.com/abhiuday17",
+        "linkedin": "https://linkedin.com/in/abhiuday-pratap-singh",
+        "leetcode": "https://leetcode.com/abhiuday17",
+        "gfg": "https://geeksforgeeks.org/user/abhiuday17"
+    },
+
+    "recruiter_views": {
+        "technical": {
+        "title": "Technical Recruiter",
+        "description": "AI Engineering, Full Stack Development, Machine Learning and Software Systems"
+        },
+        "product": {
+        "title": "Product & Business Recruiter",
+        "description": "Product Management, Operations, Strategy and Business Growth"
+        },
+        "complete": {
+        "title": "Complete Profile",
+        "description": "A complete overview of technical, product and leadership capabilities"
+        }
+    },
+
+    "hero_stats": [
+        {
+        "label": "Sponsorship Raised",
+        "value": "₹5L+"
+        },
+        {
+        "label": "People Led",
+        "value": "100+"
+        },
+        {
+        "label": "Events Managed",
+        "value": "20+"
+        },
+        {
+        "label": "AI Model Accuracy",
+        "value": "91.2%"
+        }
+    ],
+
+    "about": {
+        "summary": "Engineering student specializing in Artificial Intelligence, Full Stack Development, Product Management and Business Operations. Experienced in building AI-powered products, managing sponsorship portfolios exceeding ₹5 lakh, leading cross-functional teams, and translating technical capabilities into measurable business outcomes."
+    },
+
+    "education": [
+        {
+        "institution": "Jaypee University of Information Technology",
+        "degree": "Bachelor of Technology, Information Technology",
+        "duration": "2023 - 2027"
+        },
+        {
+        "institution": "Indian Institute of Technology Madras",
+        "degree": "Post Graduate Program, Product Management using Agentic AI",
+        "duration": "2026 - Present"
+        }
+    ],
+
+    "impact_metrics": [
+        {
+        "title": "Funding Raised",
+        "value": "₹5,00,000+"
+        },
+        {
+        "title": "Team Members Led",
+        "value": "100+"
+        },
+        {
+        "title": "Events Executed",
+        "value": "20+"
+        },
+        {
+        "title": "ML Accuracy",
+        "value": "91.2%"
+        }
+    ],
+
+    "technical_skills": {
+        "languages": [
+        "Python",
+        "Java",
+        "C",
+        "C++",
+        "TypeScript",
+        "SQL"
+        ],
+
+        "frontend": [
+        "React.js",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+        ],
+
+        "backend": [
+        "Flask",
+        "Node.js",
+        "REST APIs",
+        "PHP"
+        ],
+
+        "database": [
+        "PostgreSQL",
+        "MySQL"
+        ],
+
+        "ai_ml": [
+        "Scikit-Learn",
+        "TensorFlow",
+        "XGBoost",
+        "OpenCV",
+        "SHAP",
+        "Pandas",
+        "NumPy"
+        ],
+
+        "tools": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Postman",
+        "LaTeX",
+        "Jupyter"
+        ]
+    },
+
+    "business_skills": {
+        "product_management": [
+        "Product Roadmaps",
+        "PRDs",
+        "Feature Prioritization",
+        "User Research",
+        "A/B Testing",
+        "Competitor Analysis"
+        ],
+
+        "finance": [
+        "Budgeting",
+        "Cost Auditing",
+        "Capital Allocation",
+        "Sponsorship Acquisition"
+        ],
+
+        "leadership": [
+        "Stakeholder Management",
+        "Cross Functional Teams",
+        "Vendor Coordination",
+        "Strategic Planning"
+        ]
+    },
+
+    
+
+    "leadership": {
+        "position": "Finance Committee Head Coordinator",
+        "organization": "JUIT Youth Club",
+        "duration": "Aug 2025 - Present",
+
+        "highlights": [
+        "Raised sponsorship funding exceeding ₹5 lakh.",
+        "Worked with Decathlon, RedBus, AbhiBus, Nescafe, Amul and Barista.",
+        "Managed finances across 15+ major university events.",
+        "Led cross-functional teams of over 100 student volunteers."
+        ]
+    },
+
+    "resumes": [
+        {
+        "title": "AI Engineer Resume",
+        "file": "assets/documents/Resume_AI.pdf"
+        },
+        {
+        "title": "Product Manager Resume",
+        "file": "assets/documents/Resume_Product.pdf"
+        },
+        {
+        "title": "General Resume",
+        "file": "assets/documents/Resume_General.pdf"
+        }
+    ]
+    }

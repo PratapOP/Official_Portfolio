@@ -1,0 +1,352 @@
+    {
+    "personal": {
+        "name": "Abhiuday Pratap Singh",
+        "short_name": "APS",
+        "headline": "AI Engineer • Product Strategist • Finance Leader",
+        "tagline": "Building AI Products, Leading Teams, and Solving Real Business Problems.",
+        "email": "abhiuday17@gmail.com",
+        "phone": "+91 8826080757",
+        "location": "India",
+        "website": "https://abhiudaypsingh.com",
+        "profile_image": "assets/images/profile/profile-main.jpg"
+    },
+
+    "socials": {
+        "github": "https://github.com/abhiuday17",
+        "linkedin": "https://linkedin.com/in/abhiuday-pratap-singh",
+        "leetcode": "https://leetcode.com/abhiuday17",
+        "gfg": "https://geeksforgeeks.org/user/abhiuday17"
+    },
+
+    "recruiter_views": {
+        "technical": {
+        "title": "Technical Recruiter",
+        "description": "AI Engineering, Full Stack Development, Machine Learning and Software Systems"
+        },
+        "product": {
+        "title": "Product & Business Recruiter",
+        "description": "Product Management, Operations, Strategy and Business Growth"
+        },
+        "complete": {
+        "title": "Complete Profile",
+        "description": "A complete overview of technical, product and leadership capabilities"
+        }
+    },
+
+    "hero_stats": [
+        {
+        "label": "Sponsorship Raised",
+        "value": "₹5L+"
+        },
+        {
+        "label": "People Led",
+        "value": "100+"
+        },
+        {
+        "label": "Events Managed",
+        "value": "20+"
+        },
+        {
+        "label": "AI Model Accuracy",
+        "value": "91.2%"
+        }
+    ],
+
+    "about": {
+        "summary": "Engineering student specializing in Artificial Intelligence, Full Stack Development, Product Management and Business Operations. Experienced in building AI-powered products, managing sponsorship portfolios exceeding ₹5 lakh, leading cross-functional teams, and translating technical capabilities into measurable business outcomes."
+    },
+
+    "education": [
+        {
+        "institution": "Jaypee University of Information Technology",
+        "degree": "Bachelor of Technology, Information Technology",
+        "duration": "2023 - 2027"
+        },
+        {
+        "institution": "Indian Institute of Technology Madras",
+        "degree": "Post Graduate Program, Product Management using Agentic AI",
+        "duration": "2026 - Present"
+        }
+    ],
+
+    "impact_metrics": [
+        {
+        "title": "Funding Raised",
+        "value": "₹5,00,000+"
+        },
+        {
+        "title": "Team Members Led",
+        "value": "100+"
+        },
+        {
+        "title": "Events Executed",
+        "value": "20+"
+        },
+        {
+        "title": "ML Accuracy",
+        "value": "91.2%"
+        }
+    ],
+
+    "technical_skills": {
+        "languages": [
+        "Python",
+        "Java",
+        "C",
+        "C++",
+        "TypeScript",
+        "SQL"
+        ],
+
+        "frontend": [
+        "React.js",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+        ],
+
+        "backend": [
+        "Flask",
+        "Node.js",
+        "REST APIs",
+        "PHP"
+        ],
+
+        "database": [
+        "PostgreSQL",
+        "MySQL"
+        ],
+
+        "ai_ml": [
+        "Scikit-Learn",
+        "TensorFlow",
+        "XGBoost",
+        "OpenCV",
+        "SHAP",
+        "Pandas",
+        "NumPy"
+        ],
+
+        "tools": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Postman",
+        "LaTeX",
+        "Jupyter"
+        ]
+    },
+
+    "business_skills": {
+        "product_management": [
+        "Product Roadmaps",
+        "PRDs",
+        "Feature Prioritization",
+        "User Research",
+        "A/B Testing",
+        "Competitor Analysis"
+        ],
+
+        "finance": [
+        "Budgeting",
+        "Cost Auditing",
+        "Capital Allocation",
+        "Sponsorship Acquisition"
+        ],
+
+        "leadership": [
+        "Stakeholder Management",
+        "Cross Functional Teams",
+        "Vendor Coordination",
+        "Strategic Planning"
+        ]
+    },
+
+    "featured_projects": [
+
+  {
+    "id": "stressintel",
+
+    "title": "StressIntel PRO",
+
+    "category": "AI Product",
+
+    "image": "assets/images/projects/stressintel/cover.jpg",
+
+    "github": "https://github.com/abhiuday17/StressIntel-PRO",
+
+    "description": "Explainable AI stress diagnostics platform with SHAP interpretability and OpenCV analytics.",
+
+    "problem": "Traditional stress assessments rely on manual surveys and lack real-time explainability.",
+
+    "solution": "Built an Explainable AI platform using machine learning, SHAP, and behavioral analytics to generate real-time stress predictions.",
+
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "XGBoost",
+      "OpenCV",
+      "SHAP",
+      "Chart.js"
+    ],
+
+    "features": [
+      "Real-time stress prediction",
+      "Explainable AI using SHAP",
+      "Behavioral analytics",
+      "Interactive dashboards",
+      "Facial stress analysis"
+    ],
+
+    "results": [
+      "91.2% prediction accuracy",
+      "24+ behavioral indicators analyzed",
+      "Real-time diagnostic reporting"
+    ]
+  },
+
+  {
+    "id": "resumeanalyzer",
+
+    "title": "ResumeAnalyzer-XAI",
+
+    "category": "Machine Learning",
+
+    "image": "assets/images/projects/resumeanalyzer/cover.jpg",
+
+    "github": "https://github.com/abhiuday17/ResumeAnalyzer-XAI",
+
+    "description": "ATS resume screening platform supporting 20+ job categories with explainable scoring.",
+
+    "problem": "Candidates struggle to understand why resumes fail ATS systems.",
+
+    "solution": "Built a machine learning platform that scores resumes and explains missing skills using SHAP.",
+
+    "tech_stack": [
+      "Python",
+      "Scikit-Learn",
+      "SHAP",
+      "Flask"
+    ],
+
+    "features": [
+      "ATS scoring engine",
+      "Resume parsing",
+      "Explainable AI recommendations",
+      "Role-based evaluation"
+    ],
+
+    "results": [
+      "2500+ resumes analyzed",
+      "20+ job categories supported",
+      "Automated skill-gap detection"
+    ]
+  },
+
+  {
+    "id": "interviewgpt",
+
+    "title": "InterviewGPT",
+
+    "category": "Generative AI",
+
+    "image": "assets/images/projects/interviewgpt/cover.jpg",
+
+    "github": "#",
+
+    "description": "AI interview preparation platform powered by RAG and LLM workflows.",
+
+    "problem": "Interview preparation is generic and not personalized.",
+
+    "solution": "Developed a Retrieval-Augmented Generation platform that creates customized interview experiences.",
+
+    "tech_stack": [
+      "Python",
+      "RAG",
+      "LLMs",
+      "Vector Search"
+    ],
+
+    "features": [
+      "Resume-aware questioning",
+      "AI feedback generation",
+      "Semantic retrieval",
+      "Interview scoring"
+    ],
+
+    "results": [
+      "Personalized interview experiences",
+      "Resume-driven evaluation",
+      "Scalable retrieval pipeline"
+    ]
+  },
+
+  {
+    "id": "booking-engine",
+
+    "title": "Enterprise Booking Engine",
+
+    "category": "Product Engineering",
+
+    "image": "assets/images/projects/booking-engine/cover.jpg",
+
+    "github": "#",
+
+    "description": "Scalable booking and transaction management platform.",
+
+    "problem": "Businesses struggle with fragmented booking workflows.",
+
+    "solution": "Designed a modular enterprise-grade booking and transaction management system.",
+
+    "tech_stack": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "REST APIs"
+    ],
+
+    "features": [
+      "Booking lifecycle management",
+      "Payment tracking",
+      "Role-based dashboards",
+      "Reporting system"
+    ],
+
+    "results": [
+      "Enterprise architecture design",
+      "Scalable workflow management",
+      "Centralized booking operations"
+    ]
+  }
+
+]
+
+    "leadership": {
+        "position": "Finance Committee Head Coordinator",
+        "organization": "JUIT Youth Club",
+        "duration": "Aug 2025 - Present",
+
+        "highlights": [
+        "Raised sponsorship funding exceeding ₹5 lakh.",
+        "Worked with Decathlon, RedBus, AbhiBus, Nescafe, Amul and Barista.",
+        "Managed finances across 15+ major university events.",
+        "Led cross-functional teams of over 100 student volunteers."
+        ]
+    },
+
+    "resumes": [
+        {
+        "title": "AI Engineer Resume",
+        "file": "assets/documents/Resume_AI.pdf"
+        },
+        {
+        "title": "Product Manager Resume",
+        "file": "assets/documents/Resume_Product.pdf"
+        },
+        {
+        "title": "General Resume",
+        "file": "assets/documents/Resume_General.pdf"
+        }
+    ]
+    }

@@ -1,0 +1,192 @@
+/* =====================================================
+   GLOBAL DESIGN SYSTEM
+===================================================== */
+
+:root {
+
+    --bg-primary: #050505;
+    --bg-secondary: #0d0d0d;
+    --bg-card: rgba(255,255,255,0.04);
+
+    --accent: #c0392b;
+    --accent-bright: #e74c3c;
+
+    --accent-glow: rgba(231,76,60,0.35);
+
+    --text-primary: #ffffff;
+    --text-secondary: #c5c5c5;
+    --text-muted: #8f8f8f;
+
+    --border: rgba(255,255,255,0.08);
+
+    --shadow-lg:
+        0 25px 60px rgba(0,0,0,0.45);
+
+    --shadow-red:
+        0 0 30px rgba(231,76,60,0.15);
+
+    --radius-lg: 24px;
+    --radius-md: 18px;
+    --radius-sm: 12px;
+
+    --transition:
+        all 0.35s ease;
+
+    --max-width: 1300px;
+}
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* =====================================================
+   CONTAINERS
+===================================================== */
+
+.section-container{
+
+    width:min(92%, var(--max-width));
+
+    margin:auto;
+}
+
+section{
+
+    position:relative;
+
+    padding:100px 0;
+}
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+.section-heading{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.section-subheading{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+    margin-bottom:60px;
+}
+
+/* =====================================================
+   HERO GRID
+===================================================== */
+
+.hero-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px
+    ),
+
+    linear-gradient(
+        90deg,
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px
+    );
+
+    background-size:60px 60px;
+
+    z-index:0;
+}
+
+/* =====================================================
+   GLOWS
+===================================================== */
+
+.hero-glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.45;
+}
+
+.hero-glow-1{
+
+    width:400px;
+
+    height:400px;
+
+    background:var(--accent);
+
+    top:0;
+
+    left:-100px;
+}
+
+.hero-glow-2{
+
+    width:500px;
+
+    height:500px;
+
+    background:#ff5733;
+
+    right:-150px;
+
+    bottom:-100px;
+}

@@ -1,0 +1,51 @@
+/* =====================================================
+   LARGE DISPLAYS
+===================================================== */
+
+@media (min-width: 1400px){
+
+    .hero-title{
+        font-size:6rem;
+    }
+
+    .section-heading{
+        font-size:3.5rem;
+    }
+}
+
+/* =====================================================
+   LAPTOPS
+===================================================== */
+
+@media (max-width: 1200px){
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:60px;
+    }
+
+    .hero-content{
+
+        align-items:center;
+    }
+
+    .hero-description{
+
+        max-width:800px;
+    }
+
+    .hero-image-container{
+
+        order:-1;
+    }
+
+    .impact-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+

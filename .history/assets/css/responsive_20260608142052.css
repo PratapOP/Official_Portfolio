@@ -1,0 +1,15 @@
+/* =====================================================
+   LARGE DISPLAYS
+===================================================== */
+
+@media (min-width: 1400px){
+
+    .hero-title{
+        font-size:6rem;
+    }
+
+    .section-heading{
+        font-size:3.5rem;
+    }
+}
+
