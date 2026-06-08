@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+
+        <loc>
+            https://abhiudaypsingh.com/
+        </loc>
+
+    </url>
+
+    <url>
+
+        <loc>
+            https://abhiudaypsingh.com/project.php?id=stressintel
+        </loc>
+
+    </url>
+
+    <url>
+
+        <loc>
+            https://abhiudaypsingh.com/project.php?id=resumeanalyzer
+        </loc>
+
+    </url>
+
+    <url>
+
+        <loc>
+            https://abhiudaypsingh.com/project.php?id=interviewgpt
+        </loc>
+
+    </url>
+
+</urlset>
