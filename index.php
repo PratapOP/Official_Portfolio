@@ -205,7 +205,7 @@ $data = getPortfolio();
 
             <?php foreach ($data['hero_stats'] as $stat): ?>
 
-                <div class="impact-card">
+                <div class="impact-card" data-recruiter-view="<?= htmlspecialchars($stat['recruiter_view']) ?>">
 
                     <h3>
 
@@ -338,7 +338,7 @@ $data = getPortfolio();
                 as $achievement
             ): ?>
 
-                <div class="achievement-card">
+                <div class="achievement-card" data-recruiter-view="<?= htmlspecialchars($achievement['recruiter_view']) ?>">
 
                     <i class="fa-solid <?= htmlspecialchars(
                         $achievement['icon']
@@ -399,7 +399,7 @@ $data = getPortfolio();
                 as $item
             ): ?>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-recruiter-view="<?= htmlspecialchars($item['recruiter_view']) ?>">
 
                     <div class="timeline-year">
 
@@ -634,15 +634,7 @@ $data = getPortfolio();
 
 <section
     id="projects"
-    class="recruiter-section recruiter-complete recruiter-technical">
-
-    <a
-        href="project.php?id=<?= $project['id'] ?>"
-        class="project-btn">
-
-        View Case Study
-
-    </a>
+    class="projects-section">
 
     <div class="section-container">
 
@@ -665,6 +657,7 @@ $data = getPortfolio();
 
                 <div
                 class="project-card project-trigger"
+                data-recruiter-view="<?= htmlspecialchars($project['recruiter_view']) ?>"
                 data-title="<?= htmlspecialchars($project['title']) ?>"
                 data-category="<?= htmlspecialchars($project['category']) ?>"
                 data-description="<?= htmlspecialchars($project['description']) ?>"
@@ -706,14 +699,25 @@ $data = getPortfolio();
 
                         </p>
 
-                        <a
-                            href="<?= $project['github'] ?>"
-                            target="_blank"
-                            class="project-btn">
+                        <div class="project-links">
+                            <a
+                                href="<?= $project['github'] ?>"
+                                target="_blank"
+                                class="project-btn outline-btn"
+                                onclick="event.stopPropagation();">
 
-                            View Project
+                                <i class="fab fa-github"></i> GitHub
 
-                        </a>
+                            </a>
+                            <a
+                                href="project.php?id=<?= $project['id'] ?>"
+                                class="project-btn fill-btn"
+                                onclick="event.stopPropagation();">
+
+                                <i class="fa-solid fa-file-invoice"></i> Case Study
+
+                            </a>
+                        </div>
 
                     </div>
 
@@ -721,6 +725,54 @@ $data = getPortfolio();
 
             <?php endforeach; ?>
 
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+ GITHUB ACTIVITY
+===================================================== -->
+
+<section
+    id="github"
+    class="recruiter-section recruiter-technical">
+
+    <div class="section-container">
+
+        <h2 class="section-heading">
+
+            GitHub Activity
+
+        </h2>
+
+        <p class="section-subheading">
+
+            Open-source projects, research tools, and daily commits.
+
+        </p>
+
+        <!-- Contribution Graph -->
+        <div class="github-contributions-card">
+            <h3>Contributions Heatmap</h3>
+            <div class="github-chart-container">
+                <img src="https://ghchart.rshah.org/c0392b/abhiuday17" alt="Abhiuday's GitHub Contributions" class="github-chart">
+            </div>
+        </div>
+
+        <!-- Dynamic Repos Listing -->
+        <div class="github-repos-header">
+            <h3>Featured Repositories</h3>
+            <a href="https://github.com/abhiuday17" target="_blank" class="secondary-btn">View All Repos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="github-repos-grid" id="github-repos-grid">
+            <!-- Dynamically populated by main.js -->
+            <div class="repo-loading">
+                <div class="mini-spinner"></div>
+                <p>Fetching latest repositories from GitHub...</p>
+            </div>
         </div>
 
     </div>
@@ -795,6 +847,94 @@ $data = getPortfolio();
 </section>
 
 <!-- =====================================================
+ TESTIMONIALS (SLIDER)
+===================================================== -->
+
+<section id="testimonials" class="testimonials-section">
+
+    <div class="section-container">
+
+        <h2 class="section-heading">
+
+            Testimonials
+
+        </h2>
+
+        <p class="section-subheading">
+
+            What my managers, academic mentors, and team leads say about my work.
+
+        </p>
+
+        <div class="testimonials-slider-container">
+
+            <div class="testimonials-slider" id="testimonials-slider">
+
+                <?php foreach ($data['testimonials'] as $index => $testimonial): ?>
+
+                    <div class="testimonial-slide <?= $index === 0 ? 'active' : '' ?>">
+
+                        <div class="quote-icon">
+
+                            <i class="fa-solid fa-quote-left"></i>
+
+                        </div>
+
+                        <p class="testimonial-text">
+
+                            "<?= htmlspecialchars($testimonial['text']) ?>"
+
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <h4>
+
+                                <?= htmlspecialchars($testimonial['name']) ?>
+
+                            </h4>
+
+                            <p>
+
+                                <?= htmlspecialchars($testimonial['company']) ?>
+
+                            </p>
+
+                            <span class="testimonial-role-badge">
+
+                                <?= htmlspecialchars($testimonial['role']) ?>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+
+            </div>
+
+            <div class="slider-controls">
+
+                <button class="slider-btn prev-btn" id="slider-prev" aria-label="Previous Slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="slider-dots" id="slider-dots"></div>
+
+                <button class="slider-btn next-btn" id="slider-next" aria-label="Next Slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
  RESUME HUB
 ===================================================== -->
 
@@ -815,7 +955,8 @@ $data = getPortfolio();
                 <a
                     href="<?= $resume['file'] ?>"
                     target="_blank"
-                    class="resume-card">
+                    class="resume-card"
+                    data-recruiter-view="<?= htmlspecialchars($resume['recruiter_view']) ?>">
 
                     <i class="fa-solid fa-file-pdf"></i>
 

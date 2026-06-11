@@ -100,10 +100,72 @@
             href="assets/css/responsive.css">
 
         <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
-        <link rel="icon"
-            href="assets/images/profile/profile-main.jpg">
+        <!-- Theme Persistence Blocker -->
+        <script>
+            (function() {
+                const storedTheme = localStorage.getItem('theme') || 'dark';
+                if (storedTheme === 'light') {
+                    document.documentElement.classList.add('light-theme');
+                } else {
+                    document.documentElement.classList.remove('light-theme');
+                }
+            })();
+        </script>
+
+        <!-- Google Analytics (GA4) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?= GA_MEASUREMENT_ID ?>"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '<?= GA_MEASUREMENT_ID ?>');
+        </script>
+
+        <!-- JSON-LD Person Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "<?= htmlspecialchars($data['personal']['name']) ?>",
+            "jobTitle": "<?= htmlspecialchars($data['personal']['headline']) ?>",
+            "url": "<?= htmlspecialchars($data['personal']['website']) ?>",
+            "image": "<?= htmlspecialchars($data['personal']['profile_image']) ?>",
+            "sameAs": [
+                "<?= htmlspecialchars($data['socials']['github']) ?>",
+                "<?= htmlspecialchars($data['socials']['linkedin']) ?>",
+                "<?= htmlspecialchars($data['socials']['leetcode']) ?>",
+                "<?= htmlspecialchars($data['socials']['gfg']) ?>"
+            ],
+            "email": "<?= htmlspecialchars($data['personal']['email']) ?>",
+            "telephone": "<?= htmlspecialchars($data['personal']['phone']) ?>",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "<?= htmlspecialchars($data['personal']['location']) ?>"
+            },
+            "alumniOf": [
+                <?php foreach($data['education'] as $index => $edu): ?>
+                    <?= $index > 0 ? ',' : '' ?>{
+                        "@type": "EducationalOrganization",
+                        "name": "<?= htmlspecialchars($edu['institution']) ?>",
+                        "description": "<?= htmlspecialchars($edu['degree']) ?>"
+                    }
+                <?php endforeach; ?>
+            ]
+        }
+        </script>
 
     </head>
 
     <body>
+        <!-- Dynamic Loading Screen -->
+        <div id="loader" class="loader">
+            <div class="loader-content">
+                <span class="loader-logo"><span class="loader-accent">A</span>PS</span>
+                <div class="loader-bar">
+                    <div class="loader-progress"></div>
+                </div>
+                <p class="loader-text">Initializing portfolio...</p>
+            </div>
+        </div>

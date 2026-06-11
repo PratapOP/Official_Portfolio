@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-detail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-grad-detail)" />
+  
+  <rect x="40" y="40" width="720" height="420" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)" />
+  <text x="70" y="80" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold">Explainable AI - SHAP Decision Waterfall</text>
+  <text x="70" y="105" fill="#94a3b8" font-family="sans-serif" font-size="12">Detailed mathematical attribution values contributing to the current diagnostics report.</text>
+
+  <!-- SHAP Waterfall Chart Graph -->
+  <!-- Base Line -->
+  <line x1="150" y1="400" x2="650" y2="400" stroke="#475569" stroke-width="2" />
+  <text x="150" y="420" fill="#64748b" font-family="monospace" font-size="10" text-anchor="middle">E[f(x)] = 0.12 (Base)</text>
+  <text x="650" y="420" fill="#ef4444" font-family="monospace" font-size="10" text-anchor="middle">f(x) = 0.785 (Predicted)</text>
+
+  <!-- Waterfall arrows -->
+  <!-- Base to step 1 -->
+  <path d="M 150 360 L 280 360" stroke="#ef4444" stroke-width="6" stroke-linecap="round" />
+  <line x1="150" y1="400" x2="150" y2="360" stroke="#475569" stroke-dasharray="3 3" />
+  <text x="215" y="345" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">+0.28 (HRV Deviation)</text>
+
+  <!-- Step 1 to step 2 -->
+  <path d="M 280 300 L 400 300" stroke="#ef4444" stroke-width="6" stroke-linecap="round" />
+  <line x1="280" y1="360" x2="280" y2="300" stroke="#475569" stroke-dasharray="3 3" />
+  <text x="340" y="285" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">+0.16 (Blink Rate)</text>
+
+  <!-- Step 2 to step 3 -->
+  <path d="M 400 240 L 340 240" stroke="#10b981" stroke-width="6" stroke-linecap="round" />
+  <line x1="400" y1="300" x2="400" y2="240" stroke="#475569" stroke-dasharray="3 3" />
+  <text x="370" y="225" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">-0.09 (Pupil Dilation)</text>
+
+  <!-- Step 3 to step 4 -->
+  <path d="M 340 180 L 480 180" stroke="#ef4444" stroke-width="6" stroke-linecap="round" />
+  <line x1="340" y1="240" x2="340" y2="180" stroke="#475569" stroke-dasharray="3 3" />
+  <text x="410" y="165" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">+0.315 (Speech Jitter)</text>
+
+  <!-- Final Prediction marker -->
+  <line x1="480" y1="180" x2="650" y2="180" stroke="#ef4444" stroke-dasharray="4 4" />
+  <line x1="650" y1="180" x2="650" y2="400" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 4" />
+  <circle cx="650" cy="180" r="5" fill="#ef4444" />
+</svg>

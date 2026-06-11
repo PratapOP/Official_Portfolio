@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad-fest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad-fest)" />
+  
+  <!-- Spotlights -->
+  <path d="M 0 0 L 150 200 L 250 200 L 400 0 Z" fill="rgba(217,70,239,0.15)" />
+  <path d="M 400 0 L 250 250 L 350 250 Z" fill="rgba(14,165,233,0.15)" />
+  
+  <!-- Microphone/Music Notes -->
+  <g transform="translate(180, 80)" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2">
+    <!-- Music note -->
+    <path d="M 20 40 L 20 0 L 50 10 L 50 50 M 20 15 L 50 25" fill="none" stroke="#d946ef" stroke-width="3" stroke-linecap="round" />
+    <circle cx="10" cy="40" r="10" fill="#d946ef" />
+    <circle cx="40" cy="50" r="10" fill="#d946ef" />
+  </g>
+  
+  <text x="200" y="270" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Le Fiestus - Cultural Carnival</text>
+</svg>

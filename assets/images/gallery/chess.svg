@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad-chess" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad-chess)" />
+  
+  <!-- Chessboard pattern back -->
+  <path d="M 0 0 L 400 300 M 50 -100 L 450 300 M -50 100 L 350 400" stroke="rgba(255,255,255,0.03)" stroke-width="30" />
+  
+  <!-- Chess Knight Piece -->
+  <path d="M 170 240 C 170 240, 160 150, 190 120 C 220 90, 240 100, 250 120 C 260 140, 250 170, 230 180 C 220 185, 235 220, 250 240 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <circle cx="215" cy="130" r="3" fill="#0f172a" />
+  <rect x="150" y="240" width="120" height="20" rx="4" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" />
+  
+  <!-- Crown for team captain / regional Gold medal -->
+  <path d="M 180 90 L 190 70 L 210 80 L 230 70 L 240 90 Z" fill="#f59e0b" />
+  
+  <!-- Gold Medal overlay -->
+  <circle cx="340" cy="60" r="25" fill="#f59e0b" stroke="#d97706" stroke-width="2" />
+  <text x="340" y="65" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">🥇</text>
+  
+  <text x="200" y="285" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Chess Captaincy &amp; Regional Gold Medal</text>
+</svg>

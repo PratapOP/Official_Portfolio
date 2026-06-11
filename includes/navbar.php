@@ -92,6 +92,10 @@ $data = getPortfolio();
 
         <div class="nav-actions">
 
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
             <a
                 href="#resume-hub"
                 class="resume-btn">

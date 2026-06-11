@@ -113,6 +113,16 @@ include 'includes/header.php';
 
         </div>
 
+        <!-- System Architecture -->
+        <?php if (!empty($selectedProject['architecture_desc'])): ?>
+            <div class="project-block">
+                <h2>System Architecture</h2>
+                <div class="architecture-card">
+                    <p><?= htmlspecialchars($selectedProject['architecture_desc']) ?></p>
+                </div>
+            </div>
+        <?php endif; ?>
+
         <!-- Tech Stack -->
 
         <div class="project-block">
@@ -167,11 +177,41 @@ include 'includes/header.php';
 
         </div>
 
+        <!-- Challenges & Obstacles -->
+        <?php if (!empty($selectedProject['challenges'])): ?>
+            <div class="project-block">
+                <h2>Key Challenges &amp; Solutions</h2>
+                <ul class="challenges-list">
+                    <?php foreach($selectedProject['challenges'] as $challenge): ?>
+                        <li>
+                            <span class="challenge-bullet"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                            <span class="challenge-text"><?= htmlspecialchars($challenge) ?></span>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php endif; ?>
+
+        <!-- Lessons Learned -->
+        <?php if (!empty($selectedProject['lessons_learned'])): ?>
+            <div class="project-block">
+                <h2>Lessons &amp; Insights</h2>
+                <ul class="lessons-list">
+                    <?php foreach($selectedProject['lessons_learned'] as $lesson): ?>
+                        <li>
+                            <span class="lesson-bullet"><i class="fa-solid fa-lightbulb"></i></span>
+                            <span class="lesson-text"><?= htmlspecialchars($lesson) ?></span>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php endif; ?>
+
         <!-- Results -->
 
         <div class="project-block">
 
-            <h2>Results</h2>
+            <h2>Results &amp; Impact</h2>
 
             <ul>
 
@@ -193,6 +233,20 @@ include 'includes/header.php';
             </ul>
 
         </div>
+
+        <!-- Screenshots -->
+        <?php if (!empty($selectedProject['screenshots'])): ?>
+            <div class="project-block">
+                <h2>Visual Walkthrough</h2>
+                <div class="screenshots-grid">
+                    <?php foreach($selectedProject['screenshots'] as $screenshot): ?>
+                        <div class="screenshot-card gallery-card">
+                            <img src="<?= htmlspecialchars($screenshot) ?>" alt="Screenshot of <?= htmlspecialchars($selectedProject['title']) ?>" class="project-screenshot">
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        <?php endif; ?>
 
         <div class="project-actions">
 

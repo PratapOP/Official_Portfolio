@@ -8,7 +8,7 @@
     "phone": "+91 8826080757",
     "location": "India",
     "website": "https://abhiudaypsingh.com",
-    "profile_image": "assets/images/profile/profile-main.jpg"
+    "profile_image": "assets/images/profile/profile-main.svg"
   },
 
   "socials": {
@@ -153,7 +153,7 @@
       "id": "stressintel",
       "title": "StressIntel PRO",
       "category": "AI Product / HealthTech",
-      "image": "assets/images/projects/stressintel/cover.jpg",
+      "image": "assets/images/projects/stressintel/cover.svg",
       "github": "https://github.com/abhiuday17/StressIntel-PRO",
       "description": "Explainable AI stress diagnostics platform with SHAP interpretability and OpenCV analytics.",
       "problem": "Traditional stress assessments rely on subjective, manual surveys and lack real-time interpretability.",
@@ -188,14 +188,14 @@
         "Mastered the integration of explainable AI paradigms in clinical workflows, transforming raw predictions into transparent user feedback."
       ],
       "screenshots": [
-        "assets/images/projects/stressintel/screenshot1.jpg"
+        "assets/images/projects/stressintel/screenshot1.svg"
       ]
     },
     {
       "id": "resumeanalyzer",
       "title": "ResumeAnalyzer-XAI",
       "category": "Machine Learning / EdTech",
-      "image": "assets/images/projects/resumeanalyzer/cover.jpg",
+      "image": "assets/images/projects/resumeanalyzer/cover.svg",
       "github": "https://github.com/abhiuday17/ResumeAnalyzer-XAI",
       "description": "ATS resume screening platform supporting 20+ job categories with explainable scoring.",
       "problem": "Candidates face a 'black box' challenge with Applicant Tracking Systems, receiving automated rejections without skill gap feedback.",
@@ -229,14 +229,14 @@
         "Gained deep expertise in text preprocessing, TF-IDF representations, and feature importance mappings."
       ],
       "screenshots": [
-        "assets/images/projects/resumeanalyzer/screenshot1.jpg"
+        "assets/images/projects/resumeanalyzer/screenshot1.svg"
       ]
     },
     {
       "id": "interviewgpt",
       "title": "InterviewGPT",
       "category": "Generative AI / HRTech",
-      "image": "assets/images/projects/interviewgpt/cover.jpg",
+      "image": "assets/images/projects/interviewgpt/cover.svg",
       "github": "https://github.com/abhiuday17/InterviewGPT",
       "description": "AI interview preparation platform powered by RAG and LLM workflows.",
       "problem": "Generic question banks fail to mock realistic, customized interview environments based on individual experience profiles.",
@@ -270,14 +270,14 @@
         "Mastered advanced RAG pipelines, semantic indexing, and conversational history handling."
       ],
       "screenshots": [
-        "assets/images/projects/interviewgpt/screenshot1.jpg"
+        "assets/images/projects/interviewgpt/screenshot1.svg"
       ]
     },
     {
       "id": "booking-engine",
       "title": "Enterprise Booking Engine",
       "category": "Product Engineering / Systems",
-      "image": "assets/images/projects/booking-engine/cover.jpg",
+      "image": "assets/images/projects/booking-engine/cover.svg",
       "github": "https://github.com/abhiuday17/booking-engine",
       "description": "Scalable booking and transaction management platform.",
       "problem": "Corporate event organizations struggle with fragmented booking flows, payment latency, and loose vendor onboarding pipelines.",
@@ -310,7 +310,7 @@
         "Developed clear B2B product requirements (PRDs) to successfully synchronize commercial and software engineering teams."
       ],
       "screenshots": [
-        "assets/images/projects/booking-engine/screenshot1.jpg"
+        "assets/images/projects/booking-engine/screenshot1.svg"
       ]
     }
   ],
@@ -440,35 +440,35 @@
 
   "gallery": [
     {
-      "image": "assets/images/gallery/chess.jpg",
+      "image": "assets/images/gallery/chess.svg",
       "title": "Chess Achievement"
     },
     {
-      "image": "assets/images/gallery/sponsorship.jpg",
+      "image": "assets/images/gallery/sponsorship.svg",
       "title": "Sponsorship Partnerships"
     },
     {
-      "image": "assets/images/gallery/parakram.jpg",
+      "image": "assets/images/gallery/parakram.svg",
       "title": "PARAKRAM Event"
     },
     {
-      "image": "assets/images/gallery/lefiestus.jpg",
+      "image": "assets/images/gallery/lefiestus.svg",
       "title": "Le Fiestus"
     },
     {
-      "image": "assets/images/gallery/meditech.jpg",
+      "image": "assets/images/gallery/meditech.svg",
       "title": "Meditech Internship"
     },
     {
-      "image": "assets/images/gallery/rangmanch.jpg",
+      "image": "assets/images/gallery/rangmanch.svg",
       "title": "RangManch Internship"
     },
     {
-      "image": "assets/images/gallery/team.jpg",
+      "image": "assets/images/gallery/team.svg",
       "title": "Team Leadership"
     },
     {
-      "image": "assets/images/gallery/iitm.jpg",
+      "image": "assets/images/gallery/iitm.svg",
       "title": "IIT Madras Program"
     }
   ],
