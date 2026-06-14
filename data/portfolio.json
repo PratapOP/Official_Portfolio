@@ -15,7 +15,8 @@
     "github": "https://github.com/abhiuday17",
     "linkedin": "https://linkedin.com/in/abhiuday-pratap-singh",
     "leetcode": "https://leetcode.com/abhiuday17",
-    "gfg": "https://geeksforgeeks.org/user/abhiuday17"
+    "gfg": "https://geeksforgeeks.org/user/abhiuday17",
+    "email": "abhiuday17@gmail.com"
   },
 
   "recruiter_views": {
@@ -488,6 +489,33 @@
       "title": "General Resume",
       "file": "assets/documents/Resume_General.pdf",
       "recruiter_view": "complete"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "text": "Abhiuday consistently delivered beyond expectations. His ability to build an end-to-end XAI pipeline while simultaneously driving product decisions was remarkable. A rare hybrid talent.",
+      "name": "Dr. Priya Sharma",
+      "company": "IIT Delhi — Research Supervisor",
+      "role": "Academic Mentor"
+    },
+    {
+      "text": "One of the most driven team leads I've worked with. Abhiuday raised ₹5L+ in sponsorships, managed 100+ volunteers, and delivered flawlessly under pressure. He's built for leadership.",
+      "name": "Rohan Mehta",
+      "company": "Prometeo Tech Fest — Faculty Advisor",
+      "role": "Faculty Advisor"
+    },
+    {
+      "text": "His AI Expense Analyzer project was production-quality from day one. Robust backend architecture, clean APIs, and a thoughtful UX. Abhiuday builds with both depth and speed.",
+      "name": "Ananya Gupta",
+      "company": "Senior Software Engineer",
+      "role": "Technical Peer Review"
+    },
+    {
+      "text": "What sets Abhiuday apart is his business acumen combined with technical depth. He understands the 'why' behind every feature and aligns it with real user and business impact.",
+      "name": "Vikram Bajaj",
+      "company": "Product Lead — B2B Fintech",
+      "role": "Industry Mentor"
     }
   ]
 }
